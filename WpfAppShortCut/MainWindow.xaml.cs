@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
 
 namespace WpfAppShortCut
@@ -22,7 +21,7 @@ namespace WpfAppShortCut
 
         private void MainWindow_OnMouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            throw new NotImplementedException();
+            Close();
         }
     }
 }
