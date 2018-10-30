@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Windows;
 
 namespace WpfAppShortCut
@@ -21,6 +20,7 @@ namespace WpfAppShortCut
             _notifyIcon = new System.Windows.Forms.NotifyIcon();
             _notifyIcon.DoubleClick += (s, args) => ShowMainWindow();
             _notifyIcon.Icon = WpfAppShortCut.Properties.Resources.MyIcon;
+            _notifyIcon.Text = @"Shortcut Tool (press Ctrl+S to open)";
             _notifyIcon.Visible = true;
  
             CreateContextMenu();
@@ -29,7 +29,7 @@ namespace WpfAppShortCut
         private void CreateContextMenu()
         {
             _notifyIcon.ContextMenuStrip = new System.Windows.Forms.ContextMenuStrip();
-            _notifyIcon.ContextMenuStrip.Items.Add("Open Search").Click += (s, e) => ShowMainWindow();
+            _notifyIcon.ContextMenuStrip.Items.Add("Show Shortcut Search").Click += (s, e) => ShowMainWindow();
             _notifyIcon.ContextMenuStrip.Items.Add("Exit").Click += (s, e) => ExitApplication();
         }
 
