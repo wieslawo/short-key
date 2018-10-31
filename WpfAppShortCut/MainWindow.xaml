@@ -25,7 +25,7 @@
             </TextBox.Resources>
         </TextBox>
         <TextBlock IsHitTestVisible="False" Text="Enter Search Here" VerticalAlignment="Top" HorizontalAlignment="Left" 
-                   Margin="20 42 15 15" Foreground="DarkGray" FontSize="16.0" >
+                   Margin="19 43 15 15" Foreground="DarkGray" FontSize="16.0" >
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
                     <Setter Property="Visibility" Value="Collapsed"/>
