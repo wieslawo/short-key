@@ -3,9 +3,6 @@ using System.Windows.Input;
 
 namespace WpfAppShortCut
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()

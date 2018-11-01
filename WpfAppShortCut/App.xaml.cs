@@ -3,9 +3,6 @@ using System.Windows;
 
 namespace WpfAppShortCut
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
         private System.Windows.Forms.NotifyIcon _notifyIcon;
