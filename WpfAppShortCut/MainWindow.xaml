@@ -16,6 +16,7 @@
                 CornerRadius="8"
                 Background="MediumSlateBlue">
         </Border>
+        <TextBlock Padding="8 6 0 0">keymap</TextBlock>
         <TextBox x:Name="SearchTextBox" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="390"  
                  Margin="5" Padding="7" FontSize="16.0" Text="">
             <TextBox.Resources>
@@ -24,7 +25,7 @@
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <TextBlock IsHitTestVisible="False" Text="Enter Search Here" VerticalAlignment="Top" HorizontalAlignment="Left" 
+        <TextBlock IsHitTestVisible="False" Text="enter keymap search here" VerticalAlignment="Top" HorizontalAlignment="Left" 
                    Margin="19 43 15 15" Foreground="DarkGray" FontSize="16.0" >
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
