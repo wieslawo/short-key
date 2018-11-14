@@ -20,14 +20,33 @@ namespace WpfAppShortCut
        
         protected override void OnSourceInitialized(EventArgs e)
         {
-            base.OnSourceInitialized(e);
             _hotKeyService.RegisterHotKey(this, OnHotKeyAction);
+            base.OnSourceInitialized(e);
         }
 
         void OnHotKeyAction()
         {
-            //SearchTextBox.Text = "Ctr+Caps_Lock was pressed";
-            Application.Current.MainWindow.WindowState = WindowState.Maximized;
+            ShowHideMainWindow();
+        }
+
+        public void ShowHideMainWindow()
+        {
+            if (IsVisible)
+            {
+                if (WindowState == WindowState.Minimized)
+                {
+                    WindowState = WindowState.Normal;
+                    Activate();
+                }
+                else
+                {
+                    Close();
+                }
+            }
+            else
+            {
+                Show();
+            }
         }
 
         protected override void OnClosed(EventArgs e)
