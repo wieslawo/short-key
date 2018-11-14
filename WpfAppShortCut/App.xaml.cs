@@ -17,7 +17,7 @@ namespace WpfAppShortCut
             _notifyIcon = new System.Windows.Forms.NotifyIcon();
             _notifyIcon.DoubleClick += (s, args) => ShowMainWindow();
             _notifyIcon.Icon = WpfAppShortCut.Properties.Resources.MyIcon;
-            _notifyIcon.Text = @"keymap - press Ctrl+S to open";
+            _notifyIcon.Text = @"keymap - press Ctrl+Caps_Lock to open";
             _notifyIcon.Visible = true;
  
             CreateContextMenu();
