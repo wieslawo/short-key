@@ -7,3 +7,7 @@ https://stackoverflow.com/questions/12423207/maximize-c-sharp-application-from-s
 https://github.com/gmamaladze/globalmousekeyhook
 https://blog.magnusmontin.net/2015/03/31/implementing-global-hot-keys-in-wpf/
 https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes
+
+#call short cut from other app
+
+https://stackoverflow.com/questions/25217107/send-short-cut-command-to-other-application-in-c-sharp

@@ -16,12 +16,17 @@ namespace WpfAppShortCut
         {
             _hotKeyService = new HotKeyService();
             InitializeComponent();
+            Loaded += Window_Loaded;
         }
        
         protected override void OnSourceInitialized(EventArgs e)
         {
             _hotKeyService.RegisterHotKey(this, OnHotKeyAction);
             base.OnSourceInitialized(e);
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e) {
+            SearchTextBox.Focus();
         }
 
         void OnHotKeyAction()
