@@ -11,3 +11,10 @@ https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes
 #call short cut from other app
 
 https://stackoverflow.com/questions/25217107/send-short-cut-command-to-other-application-in-c-sharp
+
+
+
+
+#Launchy ideas
+Kiedy pierwszy raz odpala się to pojawia się strnka z płatnością
+http://www.launchy.net/donate.php

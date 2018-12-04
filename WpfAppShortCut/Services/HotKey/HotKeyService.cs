@@ -24,7 +24,7 @@ namespace WpfAppShortCut.Services.HotKey
             _source?.AddHook(HwndHook);
             _hotKeyAction = hotKeyAction;
  
-            RegisterHotKey(_windowHandle, HotkeyId, HotKeyModifiers.MOD_CONTROL, VirtualKeyCodes.VK_CAPITAL); //CTRL + CAPS_LOCK
+            RegisterHotKey(_windowHandle, HotkeyId, HotKeyModifiers.MOD_CONTROL, VirtualKeyCodes.VK_SPACE); //CTRL + SPACEBAR
         }
 
         internal void UnregisterHotKey()
@@ -43,7 +43,7 @@ namespace WpfAppShortCut.Services.HotKey
                     {
                         case HotkeyId:
                             int vkey = (((int)lParam >> 16) & 0xFFFF);
-                            if (vkey == VirtualKeyCodes.VK_CAPITAL)
+                            if (vkey == VirtualKeyCodes.VK_SPACE)
                             {
                                 _hotKeyAction();
                             }

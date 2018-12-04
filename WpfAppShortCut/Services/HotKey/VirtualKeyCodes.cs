@@ -8,5 +8,6 @@
     {
         public const uint VK_CAPITAL = 0x14;  //CAPS LOCK
         public const uint VK_S = 0x53;  //S key:
+        public const uint VK_SPACE = 0x20;  //SPACEBAR:
     }
 }

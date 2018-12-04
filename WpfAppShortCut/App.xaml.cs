@@ -32,11 +32,11 @@ namespace WpfAppShortCut
             _notifyIcon = new System.Windows.Forms.NotifyIcon();
             _notifyIcon.DoubleClick += (s, args) => ((MainWindow)MainWindow).ShowHideMainWindow();
             _notifyIcon.Icon = WpfAppShortCut.Properties.Resources.MyIcon;
-            _notifyIcon.Text = @"keymap - press Ctrl+Caps_Lock to open";
+            _notifyIcon.Text = @"keymap - press Ctrl+Spacebar to open";
             _notifyIcon.Visible = true;
 
             _notifyIcon.ContextMenuStrip = new System.Windows.Forms.ContextMenuStrip();
-            _notifyIcon.ContextMenuStrip.Items.Add("keymap search").Click += (s, e) => ((MainWindow)MainWindow)?.ShowHideMainWindow();
+            _notifyIcon.ContextMenuStrip.Items.Add("keymap search      Ctrl+Spacebar").Click += (s, e) => ((MainWindow)MainWindow)?.ShowHideMainWindow();
             _notifyIcon.ContextMenuStrip.Items.Add("exit").Click += (s, e) => ExitApplication();
         }
 
