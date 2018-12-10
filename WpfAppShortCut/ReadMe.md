@@ -11,7 +11,8 @@ https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes
 #call short cut from other app
 
 https://stackoverflow.com/questions/25217107/send-short-cut-command-to-other-application-in-c-sharp
-
+https://code.i-harness.com/en/q/241d9
+https://www.codeproject.com/Articles/18366/Sending-Keystrokes-to-another-Application-in-C
 
 
 

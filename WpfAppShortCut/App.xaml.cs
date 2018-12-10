@@ -1,6 +1,11 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
+using WpfAppShortCut.Services.HotKey;
+using WpfAppShortCut.Services.NativeWin32;
 
 namespace WpfAppShortCut
 {
@@ -61,9 +66,30 @@ namespace WpfAppShortCut
         {
             if (e.Key != System.Windows.Input.Key.Enter) return;
 
-            // your event handler here
+            //var allProcesses = Process.GetProcesses();
+
+            //foreach (Process theprocess in allProcesses)
+            //{
+            //    Console.WriteLine("Process: {0} ID: {1}", theprocess.ProcessName, theprocess.Id);
+            //}
+
+            //Process[] process1 = Process.GetProcessesByName("chrome");
+            //process1[0].WaitForInputIdle();
+            //var handler = NativeWin32.FindWindow("chrome", null);
+            var iHandle = NativeWin32.FindWindow("Notepad++", null);
+            //var iHandle = FindWindow("Notepad++", null);
+            //var iHandle = NativeWin32.FindWindow(null,"");
+
+            NativeWin32.SetForegroundWindow(iHandle);
+            System.Windows.Forms.SendKeys.SendWait("{F11}");
+
+            //SendMessage(iHandle, NativeWin32.WM_KEYDOWN, NativeWin32.VK_A, NativeWin32.VK_SHIFT);
+            //var mes = SendMessage(iHandle, NativeWin32.WM_KEYDOWN, new IntPtr(NativeWin32.VK_F11), IntPtr.Zero);
+            //var mes2 = NativeWin32.SendMessage(iHandle, NativeWin32.SC_CLOSE, 0, 0);
+
+
             e.Handled = true;
-            MessageBox.Show(((TextBox)sender).Text);
+            //MessageBox.Show(((TextBox)sender).Text);
         }
     }
 }
