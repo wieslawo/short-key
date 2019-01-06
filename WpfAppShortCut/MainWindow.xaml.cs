@@ -51,6 +51,7 @@ namespace WpfAppShortCut
             else
             {
                 Show();
+                Activate();
             }
         }
 
